@@ -157,10 +157,10 @@ img {
 
 @media (max-width: 1200px) {
   .introducao h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
   .introducao p {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 800px) {
@@ -173,7 +173,7 @@ img {
     padding-top: 2.5rem;
     box-shadow: inset 0 -60px #fff;
   }
-  .introduca-conteudo {
+  .introducao-conteudo {
     padding-bottom: 0px;
   }
   .introducao h1 {
