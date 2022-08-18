@@ -1,5 +1,8 @@
-/* reset */
+/* Global */
 @import url(./global/global.css);
+@import url(./Utilidades/cores.css);
+@import url(./Utilidades/componentes.css);
+@import url(./Utilidades/tipografia.css);
 /* Header */
 @import url(./global/header.css);
 /* Home */
