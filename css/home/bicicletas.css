@@ -4,12 +4,7 @@
 }
 
 .bicicleta-lista h2 {
-  margin: 0 auto;
   margin-bottom: 40px;
-  box-sizing: border-box;
-  max-width: 1200px;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .bicicleta-lista ul {
