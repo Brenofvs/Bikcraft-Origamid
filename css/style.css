@@ -6,4 +6,5 @@
 /* Header */
 @import url(./global/header.css);
 /* Home */
-@import url(./home/intro.css);/*# sourceMappingURL=style.css.map */
+@import url(./home/intro.css);
+@import url(./home/bicicletas.css);/*# sourceMappingURL=style.css.map */
