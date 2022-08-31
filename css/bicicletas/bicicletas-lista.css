@@ -1,62 +1,76 @@
-.bicicleta-lista {
-  padding-top: 60px;
+.bicicletas-lista {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
-.bicicleta-lista h2 {
-  margin-bottom: 40px;
+#home .bicicletas-lista {
+  padding-top: 60px;
 }
 
-.bicicleta-lista ul {
-  display: flex;
-  gap: 2.5rem;
-  padding: 0 1.25rem 1.25rem 1.25rem;
-  max-width: 1400px;
+.bicicletas-lista h2 {
+  margin-bottom: 20px;
+}
+
+.bicicletas-lista ul {
+  padding: 20px 0px;
   margin: 0 auto;
-  overflow-x: auto;
+  display: flex;
+  gap: 40px;
+  /* Se quiser ele quebrando */
+  /* flex-wrap: wrap; */
+  /* Se quiser ele com o scroll */
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
-.bicicleta-lista li {
+#home .bicicletas-lista ul {
+  max-width: 1400px;
+  padding: 20px;
+}
+
+.bicicletas-lista li {
+  flex: 1;
   min-width: 280px;
 }
 
-.bicicleta-lista a {
+.bicicletas-lista a {
   display: block;
 }
 
-.bicicleta-lista img {
-  margin-bottom: 1rem;
+.bicicletas-lista img {
+  margin-bottom: 16px;
 }
 
-.bicicleta-lista h3 {
-  margin-bottom: 0.5rem;
+.bicicletas-lista h3 {
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
 }
 
-.bicicleta-lista h3::before {
+.bicicletas-lista h3::before {
   content: "";
   display: inline-block;
-  height: 0.5rem;
-  width: 0.75rem;
-  margin-right: 0.5rem;
-  background-color: var(--cor-p1);
+  width: 12px;
+  margin-right: 8px;
+  height: 8px;
+  background: #ffbb00;
   transition: width 0.2s;
 }
 
-.bicicleta-lista a:hover h3::before {
-  width: 1.5rem;
+.bicicletas-lista a:hover h3::before {
+  width: 24px;
 }
 
-.bicicleta-lista li span {
-  padding-left: 1.25rem;
+.bicicletas-lista li span {
+  padding-left: 20px;
 }
 
 @media (max-width: 800px) {
-  .bicicleta-lista {
-    margin-bottom: 3.75rem;
+  .bicicletas-lista {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-  .bicicleta-lista ul {
-    gap: 1.25rem;
+  .bicicletas-lista ul {
+    gap: 20px;
   }
-}/*# sourceMappingURL=bicicletas.css.map */
+}
