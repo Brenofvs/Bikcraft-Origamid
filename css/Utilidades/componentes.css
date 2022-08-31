@@ -16,6 +16,9 @@
   color: var(--cor-p5);
   font: 600 1.125/1.35 "Poppins", sans-serif;
   font-weight: 600;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .link {
