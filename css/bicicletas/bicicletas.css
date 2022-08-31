@@ -1,62 +1,101 @@
-.bicicleta-lista {
+.bicicletas-bg {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   padding-top: 60px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
-.bicicleta-lista h2 {
-  margin-bottom: 40px;
+.bicicletas-imagem {
+  display: grid;
 }
 
-.bicicleta-lista ul {
-  display: flex;
-  gap: 2.5rem;
-  padding: 0 1.25rem 1.25rem 1.25rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  overflow-x: auto;
+.bicicletas-imagem img {
+  grid-area: 1/1;
 }
 
-.bicicleta-lista li {
-  min-width: 280px;
+.bicicletas-imagem span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  background: var(--cor-12);
+  display: inline-block;
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
 }
 
-.bicicleta-lista a {
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+
+.bicicletas h2,
+.bicicletas p {
+  grid-column: 1/-1;
+}
+
+.bicicletas h2 {
+  margin-bottom: 20px;
+}
+
+.bicicletas h2::before {
+  content: "";
   display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
 }
 
-.bicicleta-lista img {
-  margin-bottom: 1rem;
+.bicicletas p {
+  margin-bottom: 32px;
 }
 
-.bicicleta-lista h3 {
-  margin-bottom: 0.5rem;
+.bicicletas a {
+  place-self: end;
+}
+
+.bicicletas li {
   display: flex;
   align-items: center;
 }
 
-.bicicleta-lista h3::before {
-  content: "";
-  display: inline-block;
-  height: 0.5rem;
-  width: 0.75rem;
-  margin-right: 0.5rem;
-  background-color: var(--cor-p1);
-  transition: width 0.2s;
+.bicicletas ul {
+  display: grid;
+  gap: 16px;
 }
 
-.bicicleta-lista a:hover h3::before {
-  width: 1.5rem;
-}
-
-.bicicleta-lista li span {
-  padding-left: 1.25rem;
+.bicicletas-conteudo img {
+  width: 24px;
+  margin-right: 8px;
 }
 
 @media (max-width: 800px) {
-  .bicicleta-lista {
-    margin-bottom: 3.75rem;
+  .bicicletas-bg {
+    background: var(--cor-11);
   }
-  .bicicleta-lista ul {
-    gap: 1.25rem;
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas ul {
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+  .bicicletas a {
+    place-self: start;
   }
 }/*# sourceMappingURL=bicicletas.css.map */
