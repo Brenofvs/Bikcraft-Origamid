@@ -3,8 +3,9 @@
 @import url(./Utilidades/cores.css);
 @import url(./Utilidades/componentes.css);
 @import url(./Utilidades/tipografia.css);
-/* Header */
+/* Header & Footer */
 @import url(./global/header.css);
+@import url(./global/footer.css);
 /* Home */
 @import url(./home/intro.css);
 @import url(./home/tecnologia.css);
